@@ -1,0 +1,80 @@
+rom tkinter import *
+
+root = Tk()
+
+# функции
+def btnClick(numbers):
+ global operator
+ operator = operator + str(numbers)
+ txt_input.set(operator) # добавляет цифру в поле
+
+def btnClearDisplay():
+ global operator
+ operator = ""
+ txt_input.set("")
+
+def btnEqualsInput():
+ global operator
+ sumup = str(eval(operator)) # использование eval чтобы вычислять строку
+ txt_input.set(sumup)
+ operator = ""
+
+
+operator = ""
+txt_input = StringVar()
+
+txtDisplay = Entry(root, font=('arial', 20, 'bold'), textvariable=txt_input, bd=30, insertwidth=4, 
+ bg="powder blue", justify='right').grid(columnspan=4)
+
+
+# КНОПКИ
+btn7 = Button(root, text="7",  padx=16, pady=16, bd=8, command=lambda:btnClick(7))
+btn7.grid(row=1, column=0)
+
+btn8 = Button(root, text="8",  padx=16, pady=16, bd=8, command=lambda:btnClick(8))
+btn8.grid(row=1, column=1)
+
+btn9 = Button(root, text="9",  padx=16, pady=16, bd=8, command=lambda:btnClick(9))
+btn9.grid(row=1, column=2)
+
+add_btn = Button(root, text="+",  padx=16, pady=16, bd=8, command=lambda:btnClick("+"))
+add_btn.grid(row=1, column=3)
+
+btn4 = Button(root, text="4",  padx=16, pady=16, bd=8, command=lambda:btnClick(4))
+btn4.grid(row=2, column=0)
+
+btn5 = Button(root, text="5",  padx=16, pady=16, bd=8, command=lambda:btnClick(5))
+btn5.grid(row=2, column=1)
+
+btn6 = Button(root, text="6",  padx=16, pady=16, bd=8, command=lambda:btnClick(6))
+btn6.grid(row=2, column=2)
+
+sub_btn = Button(root, text="-",  padx=16, pady=16, bd=8, command=lambda:btnClick("-"))
+sub_btn.grid(row=2, column=3)
+
+btn1 = Button(root, text="1",  padx=16, pady=16, bd=8, command=lambda:btnClick(1))
+btn1.grid(row=3, column=0)
+
+btn2 = Button(root, text="2",  padx=16, pady=16, bd=8, command=lambda:btnClick(2))
+btn2.grid(row=3, column=1)
+
+btn3 = Button(root, text="3",  padx=16, pady=16, bd=8, command=lambda:btnClick(3))
+btn3.grid(row=3, column=2)
+
+mul_btn = Button(root, text="*",  padx=16, pady=16, bd=8, command=lambda:btnClick("*"))
+mul_btn.grid(row=3, column=3)
+
+btn0 = Button(root, text="0",  padx=16, pady=16, bd=8, command=lambda:btnClick(0))
+btn0.grid(row=4, column=0)
+
+btnClear = Button(root, text="C",  padx=16, pady=16, bd=8, command=btnClearDisplay)
+btnClear.grid(row=4, column=1)
+
+btnEquals = Button(root, text="=",  padx=16, pady=16, bd=8, command=btnEqualsInput)
+btnEquals.grid(row=4, column=2)
+
+div_btn = Button(root, text="/",  padx=16, pady=16, bd=8, command=lambda:btnClick("/"))
+div_btn.grid(row=4, column=3)
+
+
+root.mainloop()
