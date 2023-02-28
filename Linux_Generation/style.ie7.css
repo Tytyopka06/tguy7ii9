@@ -1,0 +1,164 @@
+.art-Sheet-tl
+{
+	clip: rect(auto 12px 12px auto);
+}
+
+.art-Sheet-tr
+{
+	clip: rect(auto auto 12px 12px);
+}
+
+.art-Sheet-bl
+{
+	clip: rect(12px 12px auto auto);
+}
+
+.art-Sheet-br
+{
+	clip: rect(12px auto auto 12px);
+}
+
+.art-Sheet-tc
+{
+	clip: rect(auto auto 12px auto);
+}
+
+.art-Sheet-bc
+{
+	clip: rect(12px auto auto auto);
+}
+
+.art-Sheet-cr
+{
+	clip: rect(auto auto auto 12px);
+}
+
+.art-Sheet-cl
+{
+	clip: rect(auto 12px auto auto);
+}
+
+.art-Sheet-body
+{
+	zoom: 1;
+}
+
+.art-nav .r
+{
+	clip: rect(auto auto auto 1006px);
+}
+
+.art-menu a .r
+{
+	clip: rect(auto auto auto 400px);
+}
+
+.art-Block-tl
+{
+	clip: rect(auto 11px 11px auto);
+}
+
+.art-Block-tr
+{
+	clip: rect(auto auto 11px 11px);
+}
+
+.art-Block-bl
+{
+	clip: rect(11px 11px auto auto);
+}
+
+.art-Block-br
+{
+	clip: rect(11px auto auto 11px);
+}
+
+.art-Block-tc
+{
+	clip: rect(auto auto 11px auto);
+}
+
+.art-Block-bc
+{
+	clip: rect(11px auto auto auto);
+}
+
+.art-Block-cr
+{
+	clip: rect(auto auto auto 11px);
+}
+
+.art-Block-cl
+{
+	clip: rect(auto 11px auto auto);
+}
+
+.art-Block-body
+{
+	zoom: 1;
+}
+
+.art-BlockHeader .r
+{
+	clip: rect(auto auto auto 1010px);
+}
+
+.art-BlockContent-body
+{
+	zoom: 1;
+}
+
+.art-Post-tl
+{
+	clip: rect(auto 8px 8px auto);
+}
+
+.art-Post-tr
+{
+	clip: rect(auto auto 8px 8px);
+}
+
+.art-Post-bl
+{
+	clip: rect(8px 8px auto auto);
+}
+
+.art-Post-br
+{
+	clip: rect(8px auto auto 8px);
+}
+
+.art-Post-tc
+{
+	clip: rect(auto auto 8px auto);
+}
+
+.art-Post-bc
+{
+	clip: rect(8px auto auto auto);
+}
+
+.art-Post-cr
+{
+	clip: rect(auto auto auto 8px);
+}
+
+.art-Post-cl
+{
+	clip: rect(auto 8px auto auto);
+}
+
+.art-Post-body
+{
+	zoom: 1;
+}
+
+.art-PostContent
+{
+	height:1%;
+}
+
+.art-button-wrapper .r
+{
+	clip: rect(auto auto auto 403px);
+}
